@@ -1,0 +1,54 @@
+#header{
+    text-align: center;
+    margin-top: 2rem;
+   letter-spacing: 1rem;
+   font-size: 2.5rem;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #333;
+    width: 50rem;
+    padding: 2rem;
+    text-align: justify;
+    border-radius: 2rem;
+}
+#figure{
+    overflow: hidden;
+    width: 20rem;
+    height: 32rem;
+    
+    border-radius: 1.5rem;
+}
+#figure div{
+    display: flex;
+    gap: 0.625rem;    
+    transition: all ease-in-out 1s;
+}
+
+
+#figure div img{
+    width: 20rem;
+    height: 32rem;
+}
+
+#innerRight{
+    width: 30rem;
+    border: none;
+}

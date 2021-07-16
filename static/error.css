@@ -1,0 +1,39 @@
+#outer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+#outer h1{
+    text-align: center;
+
+}
+#inner{
+    border: 2px solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+button{
+    color: #333;
+    padding: 0.625rem;
+    width: 6rem;
+    background: none;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 0.625rem;
+    transition: all ease-out 150ms;
+}
+button:hover{
+    color: #fff;
+    background-color: #333;
+}
+button a{
+    color: inherit;
+    text-decoration: none;
+}

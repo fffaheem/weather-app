@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="../../static/index.css">
+    <link rel="stylesheet" href="../../static/weather.css">
+</head>
+
+<body>
+    {{>navBar}}
+
+    <div id="formContainer">
+        <form>
+            <label for="city">Enter Your City name</label>
+            <input type="text" name="city" id="city">
+            <button>Submit</button>
+        </form>
+    </div>
+    <div id="mssg" class={{mssgHide}}>
+        <h1 >{{message}}</h1>
+    </div>
+    <section>
+        <div id="container" class={{containerHide}}>
+            <div>
+                <h1> Temperature :  </h1>
+                <span> {{temp}}° C </span>
+            </div>
+
+            <div>
+                <h1> Temperature Feels like :  </h1>
+                <span> {{tempFeelsLike}}° C </span>
+            </div>
+
+            <div>
+                <h1> Minimum Temp :  </h1>
+                <span> {{tempMin}}° C </span>
+            </div>
+
+            <div>
+                <h1> Maximum Temp :  </h1>
+                <span> {{tempMax}}° C </span>
+            </div>
+
+            <div>
+                <h1> Weather :  </h1>
+                <div id="weatherDesc">
+                <span> {{weather}} </span>
+                <span> {{weatherDesc}} </span>
+                </div>
+            </div>
+
+            <div>
+                <h1> City :  </h1>
+                <span> {{cityName}} </span>
+            </div>
+
+            <div>
+                <h1> Country :  </h1>
+                <span> {{countryName}}</span>
+            </div>
+
+        </div>
+    </section>
+
+    {{>footer}}
+</body>
+
+</html>

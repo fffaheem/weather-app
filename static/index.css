@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: 'GFS Didot', serif;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 674px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+
